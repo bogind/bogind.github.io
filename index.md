@@ -1,8 +1,8 @@
 ## Welcome to GitHub Pages
 
 ### Repository updates
-[SIRItoGTFS](stg.md)    
-[easycsv](easycsv.md)
+[SIRItoGTFS](/docs/stg.md)    
+[easycsv](/docs/easycsv.md)
 
 
 
