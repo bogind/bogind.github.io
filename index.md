@@ -1,5 +1,7 @@
 ## Welcome to Dror Bogin's GitHub Page    
 
+This page exists mostly so i will work on my MarkDown and HTML but if you run across it you can check out my repositories and such.   
+    
 ### These are my current repositories:    
 [easycsv](https://github.com/bogind/easycsv) - is a **R** library which provides useful functions for fast and easy reading of multiple tables in .txt or .csv format into R's environment.   
 [SIRItoGTFS](https://github.com/bogind/SIRItoGTFS) - is a **R** package which provides tools for comparison between SIRI and GTFS data.   
