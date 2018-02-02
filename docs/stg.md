@@ -12,3 +12,6 @@ It's a **R** package which includes functions to help compare [SIRI](http://user
 The package includes the full functions to perform the analysis alone and a wrapper function (STG) which allows to perform the analysis with the use of one function on its own.        
 
 The packages also includes a *sirisample* table from the initial tests to allow researchers to validate the results and understands the required column names for the process.
+
+
+![View of Tel Aviv And Be'er Sheva during the test]()
