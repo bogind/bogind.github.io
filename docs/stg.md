@@ -15,4 +15,4 @@ The packages also includes a *sirisample* table from the initial tests to allow 
 
 #### View of Tel Aviv And Be'er Sheva during the test           
                 
-<img src="bogind.github.io/gifs/BSTAanimation.gif"/>
+<img src="https://bogind.github.io/gifs/BSTAanimation.gif"/>
