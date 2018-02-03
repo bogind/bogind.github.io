@@ -16,3 +16,6 @@ The packages also includes a *sirisample* table from the initial tests to allow 
 #### View of Tel Aviv And Be'er Sheva during the test           
                 
 [![](https://img.youtube.com/vi/Fj2o-TxRsDU/0.jpg)](https://www.youtube.com/watch?v=Fj2o-TxRsDU&feature=youtu.be)
+                
+                                
+![](https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4)                                
