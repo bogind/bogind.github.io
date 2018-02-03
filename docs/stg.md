@@ -18,7 +18,7 @@ The packages also includes a *sirisample* table from the initial tests to allow 
                                 
 ![](https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4)                                
 <iframe src="https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4" width="640" height="360" frameborder="0"></iframe>
-<video width="320" height="240" autoplay>
+<video width="720" height="720" autoplay>
         <source src="https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
