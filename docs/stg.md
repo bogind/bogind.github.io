@@ -19,3 +19,4 @@ The packages also includes a *sirisample* table from the initial tests to allow 
                 
                                 
 ![](https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4)                                
+<video src="https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4" controls preload></video>
