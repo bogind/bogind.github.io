@@ -14,9 +14,7 @@ The package includes the full functions to perform the analysis alone and a wrap
 The packages also includes a *sirisample* table from the initial tests to allow researchers to validate the results and understands the required column names for the process.
 
 #### View of Tel Aviv And Be'er Sheva during the test           
-                
-[![](https://img.youtube.com/vi/Fj2o-TxRsDU/0.jpg)](https://www.youtube.com/watch?v=Fj2o-TxRsDU&feature=youtu.be)
-                
+          
                                 
 ![](https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4)                                
-<iframe src="https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4" width="640" height="360" frameborder="0" controls preload></iframe>
+<iframe src="https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4" width="640" height="360" frameborder="0" controls preload allowfullscreen autoplay=1 loop=1></iframe>
