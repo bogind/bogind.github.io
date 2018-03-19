@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing some things, with a map</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<style>	h1 { color:green; } </style>
+    <head/>
+    <body  style="background:url('https://image.freepik.com/free-vector/hexagonal-pattern_1051-833.jpg');">
+			
+			<h1 id="h1" >
+				This is the main heading
+			</h1>
+			<h3> And this is the secondary heading</h3>
+			<p>This is a <b>BOLD</b> paragraph.</br>
+			<a href="#map">link to the map</a>
+			<a href="#video">link to a video</a>
+			<!--target opens the link in a new window in chrome, a new tab in firefox, target="_blank" is what should be used for that -->
+			</p>
+			<p align="left">This is a paragraph with an image.</br>
+			<img src="./images/tileplotallBS.png"></br>
+			This is the end of the paragraph <i> in Italic</i>.</br>
+			</p>
+			<table border="1">
+				<tr>
+					<td></td> <td>pacific</td> <td>eurasian</td>
+				</tr>
+				<tr>
+					<td>min</td> <td>276</td> <td>258</td>
+				</tr>
+				<tr>
+					<td>max</td> <td>283</td> <td>293</td>
+				</tr>
+			</table>
+
+			<h6>small header</h6>
+			<ol>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+				<li><ol>
+					<li>Coffee</li>
+					<li>Not Coffee</li>
+					</ol></li>
+			</ol>
+			<h4 id="map">Map in an inline frame</h4>
+				<center>
+					<iframe
+					style="float:middle"
+					src="https://github.com/bogind/siri-webmap/blob/master/index.html#13/31.2497/34.7879"
+					width="75%"
+					height="400">
+					</iframe>
+				</center>
+			<p>
+			<video 
+			style="margin-left: auto; margin-right: auto;display: block" 
+			id = "video"
+			autoplay="" loop="" width="480" height="480">
+			<source src="https://raw.githubusercontent.com/bogind/bogind.github.io/master/videos/test.mp4" type="video/mp4">Your browser does not support the video tag.
+			</video>
+			</p>
+			<h3>table exmaple</h3>
+			<table border="1">
+			<tr>
+				<td></td>
+				<td>pacific</td>
+				<td>eurasian</td>
+			</tr>
+			<tr>
+				<td>min</td>
+				<td>276</td>
+				<td>258</td>
+			</tr>
+			<tr>
+				<td>max</td>
+				<td>283</td>
+				<td>293</td>
+			</tr>
+		</table>
+		</br>
+		</br>
+		<input type="number" name="num" min="0" max="100" value="5">
+		<input type="range" name="points" min="0" max="100">
+		First name:<br>
+		<input type="text" name="firstname"><br>
+		Last name:<br>
+		<input type="text" name="lastname"><br>
+		<input type="radio" name="gender" value="male" checked> Male<br>
+		<input type="radio" name="gender" value="female"> Female<br>
+		<input type="radio" name="notgender" value="neither">neither<br>
+		<form role="search">
+			<div>
+				<input type="search" id="mySearch" name="q"
+				size="40"	placeholder="search...">
+				<button>Search</button>
+			</div>
+		</form>
+		<center>
+			<p> Google search</p>
+			<form action="https://google.com/search" method="get">
+				<input type="hidden" name="sitesearch" placeholder="http://acme.com" />
+				<input type="text" name="q" />
+			</form>
+		</center>	
+		<br>
+		<br>
+    </body>
+</html>
