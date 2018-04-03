@@ -12,11 +12,11 @@ updates about each repository are posted below.
 [SIRItoGTFS](/docs/stg.md)    
 [easycsv](/docs/easycsv.md)   
 [GTFStools](/docs/gtfstools.md)
-[JS Interactive mapping first project](/first/index.html)
+        
 
 
 <img src ="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.svg?v=6e4af45f4d66" width="25" height="25"/> My StackOverflow profile [Dror Bogin](https://stackoverflow.com/users/5874767/dror-bogin)    
 <img src ="https://image.flaticon.com/icons/png/512/174/174857.png" width="25" height="25"/> My LinkedIn profile [Dror Bogin](https://www.linkedin.com/in/dror-bogin-637809117/)
         
         
-[JS Course 1st Project](/docs/FirstProject/index.html)
+[JS Course 1st Project](https://github.com/bogind/JS-course-1/blob/master/index.html)
