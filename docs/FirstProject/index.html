@@ -46,9 +46,12 @@
 								"<b># of Obs: </b>" + 
 								feature.properties.NUM_timedi + 
 								"</br><b> Mean Time Variation: </b>" + 
-								feature.properties.AVG_timedi +
+								// rounded to create more informative popups
+								Math.round(feature.properties.AVG_timedi*10)/10 + 
+								" Minutes" + 
 								"</br> <b>Range of obs: </b>" + 
-								feature.properties.Range + " Minutes");
+								feature.properties.Range +
+								" Minutes");
 					}
 				}
 				
