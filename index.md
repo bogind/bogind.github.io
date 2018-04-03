@@ -19,4 +19,4 @@ updates about each repository are posted below.
 <img src ="https://image.flaticon.com/icons/png/512/174/174857.png" width="25" height="25"/> My LinkedIn profile [Dror Bogin](https://www.linkedin.com/in/dror-bogin-637809117/)
         
         
-[JS Course 1st Project](https://github.com/bogind/JS-course-1/blob/master/index.html)
+[JS Course 1st Project](/docs/FirstProject/index.html)
