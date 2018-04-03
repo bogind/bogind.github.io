@@ -34,9 +34,9 @@
 				});
 				// creating a group layer for the tiles
 				var baseMaps = {
+				"<span style='color: #777777'>Open Street Map</span>": OSM,
 				"<span style='color: #478547'>Thunderforest neighbourhood</span>": Thunderforest_neighbourhood,
-				"<span style='color: #478547'>Thunderforest <span style='color: #2b2b73'>Transport</span></span>": Thunderforest_transport_dark,
-				"<span style='color: #777777'>Open Street Map</span>": OSM
+				"<span style='color: #478547'>Thunderforest <span style='color: #2b2b73'>Transport</span></span>": Thunderforest_transport_dark
 				};
 				
 				// Function to create the popups for the GeoJSON layer
@@ -153,10 +153,10 @@
 			and more tile layers are available for viewing. </p>
 			<p>________________________________________________________</p>
 			<b>Mean Time Variation by color: </b><br><br>
-			<i style="background-color: #b30000"></i><p>Late</p>
-			<i style="background-color: #33ccff"></i><p>On Time</p>
-			<i style="background-color: #2eb82e"></i><p>Early</p>
-			<i style="background-color: gray"></i><p style ="align:'left';">No Observations</p>
+			<i style="background-color: #b30000"></i><p><b>Late</b> (More than 1 Minute)</p>
+			<i style="background-color: #33ccff"></i><p><b>On Time</b></p>
+			<i style="background-color: #2eb82e"></i><p><b>Early</b> (More than 1 Minute)</p>
+			<i style="background-color: gray"></i><p style ="align:'left';"><b>No Observations</b></p>
 			</div>
 		</div>
 	</body>
