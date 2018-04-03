@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<! meta needed for bootstrap >
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -9,6 +10,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
 		<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+		<!relative path to geojson layer and stylesheet>
 		<script src="data/BSstat.geojson" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<title>איחור ממוצע לפי אזור באר שבע</title>
@@ -16,9 +18,8 @@
 	<body>
 		<div id="map" style="width: 100%; height: 100%;">
 			<script>
-				// Create variable to hold map element, give initial settings to map
 
-				// Add OpenStreetMap tile layer to map element
+				// Add OpenStreetMap and thunderforest neighbourhood tile layers variables
 				var OSM = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'});
 				var Thunderforest_neighbourhood = L.tileLayer('https://{s}.tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=278544e7c2664b7cb3d23b7433e96f5c', {
 				attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -26,11 +27,13 @@
 				maxZoom: 22,
 				minZoom: 12
 				});
+				// creating a group layer for the tiles
 				var baseMaps = {
-				"Thunderforest neighbourhood": Thunderforest_neighbourhood,
-				"<span style='color: gray'>Open Street Map</span>": OSM
+				"<span style='color: #478547'>Thunderforest neighbourhood</span>": Thunderforest_neighbourhood,
+				"<span style='color: #777777'>Open Street Map</span>": OSM
 				};
 				
+				// Function to create the popups for the GeoJSON layer
 				function onEachFeature(feature, layer) {
 				if (feature.properties && feature.properties.NUM_timedi) {
 				layer.bindPopup(
@@ -43,6 +46,7 @@
 					}
 				}
 				
+				// Read GeoJSON into a named variable, add the popup function and the styling function
 				var BsStats = L.geoJSON(BSstat, {
 				onEachFeature: onEachFeature,
 				style: function(feature) {
@@ -63,11 +67,12 @@
 					}
 				});
 				
+				// create a group layer for the layer to appear in the layer contols
 				var BS = {
-				"<span style='color: Blue'>Be'er Sheva Mean Time Variation</span>": BsStats
+				"<span style='color: #008ae6'>Be'er Sheva Mean Time Variation</span>": BsStats
 				};			
 
-				
+				// create map object
 				var map = L.map('map', 
 				{center: [31.251155, 34.790096], 
 				zoom: 13,
@@ -76,42 +81,40 @@
 
 				L.control.layers(baseMaps, BS).addTo(map);
 
-				var legend = L.control({position: 'bottomleft'});
+				// kept the old legend for reference, used a bootstrap collapsable instead
+				//var legend = L.control({position: 'bottomleft'});
 				
-				// Function that runs when legend is added to map
-				legend.onAdd = function (map) {
+				//legend.onAdd = function (map) {
 
-					// Create Div Element and Populate it with HTML
-					var div = L.DomUtil.create('div', 'legend');
-					div.innerHTML += '<h3>Beer Sheva Time Variation</h3>';
-					div.innerHTML += '<p>The map shows time variation between real-time </p>';
-					div.innerHTML += '<p>bus location data and bus schedules.</p>';
-					div.innerHTML += '<p>real-time data was collected over a week in July 2017</p>';
-					div.innerHTML += '<p>the data was collected using the <b>R</b> programming language, </p>';
-					div.innerHTML += '<p>with HTTP POST querying Israel\'s Ministery Of</p>';
-					div.innerHTML += '<p>Transportation\'s server to query the server and recieve</p>';
-					div.innerHTML += '<p>a response containing the <a href="http://user47094.vs.easily.co.uk/siri/documentation.htm">SIRI</a> data transfer protocol.</p>';
-					div.innerHTML += '<p>More informatin about the study can be found <a href="http://raphael.geography.ad.bgu.ac.il/GAMESLab/190-2/estimation-of-public-transportation-service-reliability/">HERE</a>.</p>';
-					div.innerHTML += '<p>________________________________________________________</p>';
-					div.innerHTML += '<p>The popup for each hexagon states the number </p>';
-					div.innerHTML += '<p>of observations collected and compared within it, </p>';
-					div.innerHTML += '<p>the mean time variation inside the hexagon and </p>';
-					div.innerHTML += '<p>the range of time varition in minutes between the smallest</p>';
-					div.innerHTML += '<p>(earliset compared to schedule) and largest observation in the area.</p>';
-					div.innerHTML += '<p> gray hexagons will have no observations, and therefore no popup.</p>';
-					div.innerHTML += '<p>________________________________________________________</p>';
-					div.innerHTML += '<b>Mean Time Variation by color: </b></br></br>';
-					div.innerHTML += '<i style="background-color: #b30000"></i><p>Late</p>';
-					div.innerHTML += '<i style="background-color: #33ccff"></i><p>On Time</p>';
-					div.innerHTML += '<i style="background-color: #2eb82e"></i><p>Early</p>';
-					div.innerHTML += '<i style="background-color: gray"></i><p align: "left";>No Observations</p>';
+					//var div = L.DomUtil.create('div', 'legend');
+					//div.innerHTML += '<h3>Beer Sheva Time Variation</h3>';
+					//div.innerHTML += '<p>The map shows time variation between real-time </p>';
+					//div.innerHTML += '<p>bus location data and bus schedules.</p>';
+					//div.innerHTML += '<p>real-time data was collected over a week in July 2017</p>';
+					//div.innerHTML += '<p>the data was collected using the <b>R</b> programming language, </p>';
+					//div.innerHTML += '<p>with HTTP POST querying Israel\'s Ministery Of</p>';
+					//div.innerHTML += '<p>Transportation\'s server to query the server and recieve</p>';
+					//div.innerHTML += '<p>a response containing the <a href="http://user47094.vs.easily.co.uk/siri/documentation.htm">SIRI</a> data transfer protocol.</p>';
+					//div.innerHTML += '<p>More informatin about the study can be found <a href="http://raphael.geography.ad.bgu.ac.il/GAMESLab/190-2/estimation-of-public-transportation-service-reliability/">HERE</a>.</p>';
+					//div.innerHTML += '<p>________________________________________________________</p>';
+					//div.innerHTML += '<p>The popup for each hexagon states the number </p>';
+					//div.innerHTML += '<p>of observations collected and compared within it, </p>';
+					//div.innerHTML += '<p>the mean time variation inside the hexagon and </p>';
+					//div.innerHTML += '<p>the range of time varition in minutes between the smallest</p>';
+					//div.innerHTML += '<p>(earliset compared to schedule) and largest observation in the area.</p>';
+					//div.innerHTML += '<p> gray hexagons will have no observations, and therefore no popup.</p>';
+					//div.innerHTML += '<p>________________________________________________________</p>';
+					//div.innerHTML += '<b>Mean Time Variation by color: </b></br></br>';
+					//div.innerHTML += '<i style="background-color: #b30000"></i><p>Late</p>';
+					//div.innerHTML += '<i style="background-color: #33ccff"></i><p>On Time</p>';
+					//div.innerHTML += '<i style="background-color: #2eb82e"></i><p>Early</p>';
+					//div.innerHTML += '<i style="background-color: gray"></i><p align: "left";>No Observations</p>';
 				  
-					// Return the Legend div containing the HTML content
-					return div;
+					//return div;
 					
-				};
-				// Add Legend to Map
-				legend;
+				//};
+				
+				//legend.addTo(map);
 				
 
 			</script>			
