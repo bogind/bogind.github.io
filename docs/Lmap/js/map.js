@@ -21,7 +21,7 @@
 				var customOptions = {
 								maxWidth: 500,
 								minWidth : 300,
-								color: #80d4ff
+								background-color:#80d4ff
 								}
 				
 				
