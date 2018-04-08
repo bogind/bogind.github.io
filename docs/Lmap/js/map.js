@@ -6,11 +6,14 @@
 				var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 				attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 				});
+				var rbm = L.tileLayer('file://tiles/{z}/{x}/{y}.png');
+				
 				
 				
 				var baseMaps = {
 				"<span style='color: #777777'>Open Street Map</span>": OSM,
-				"Esri World Imagery": Esri_WorldImagery
+				"Esri World Imagery": Esri_WorldImagery,
+				"Rahat Municipality Layer": rbm
 				};
 				
 				// Function to create the popups for the GeoJSON layer
@@ -18,12 +21,10 @@
 				function onEachFeature(feature, layer) {
 				if (feature.properties && feature.properties.Neighborho) {
 				layer.bindPopup(
-					'<p style="font-size:16px">Rahat Municipility</p></br>' + 			
-					"<b>Neighborhood:  </b>" + 
+								"<b>Neighborhood:  </b>" + 
 								feature.properties.Neighborho+
 								"</br><b> Lot #: </b>" +
-								feature.properties.PlotNum, 
-								maxWidth : 200);
+								feature.properties.PlotNum);
 					}
 				}
 				
@@ -121,9 +122,10 @@
 				});
 				measureControl.addTo(map);
 				
+				
 				L.control.mousePosition().addTo(map);
-
-
+				
+				
 				var osmGeocoder = new L.Control.OSMGeocoder({
 					collapsed: false,
 					position: 'topright',
