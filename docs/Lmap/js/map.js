@@ -128,7 +128,7 @@
 				   lng = ev.latlng.lng;
 				});
 
-				document.getElementById("map").addEventListener("contextmenu", function (event) {
+				document.getElementById("map").addEventListener("marker", function (event) {
 				    // Prevent the browser's context menu from appearing
 				    event.preventDefault();
 
