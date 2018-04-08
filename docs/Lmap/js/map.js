@@ -16,15 +16,26 @@
 				"Rahat Municipality Layer": rbm
 				};
 				
+				
+				
+				var customOptions = {
+								maxWidth: 500,
+								minWidth : 300
+								}
+				
+				
 				// Function to create the popups for the GeoJSON layer
 				// needs editing to match migrashim data
 				function onEachFeature(feature, layer) {
 				if (feature.properties && feature.properties.Neighborho) {
 				layer.bindPopup(
+								'<p style="font-size:18px; white-space: nowrap ; width:250"><b>Rahat Municipality</b></p>' +
 								"<b>Neighborhood:  </b>" + 
 								feature.properties.Neighborho+
 								"</br><b> Lot #: </b>" +
-								feature.properties.PlotNum);
+								feature.properties.PlotNum,
+								customOptions
+								);
 					}
 				}
 				
