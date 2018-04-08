@@ -22,7 +22,8 @@
 					"<b>Neighborhood:  </b>" + 
 								feature.properties.Neighborho+
 								"</br><b> Lot #: </b>" +
-								feature.properties.PlotNum);
+								feature.properties.PlotNum, 
+								maxWidth : 200);
 					}
 				}
 				
