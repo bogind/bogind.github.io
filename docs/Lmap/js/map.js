@@ -121,23 +121,9 @@
 				});
 				measureControl.addTo(map);
 				
-				var lat, lng;
+				L.control.mousePosition().addTo(map);
 
-				map.addEventListener('mousemove', function(ev) {
-				   lat = ev.latlng.lat;
-				   lng = ev.latlng.lng;
-				});
 
-				document.getElementById("map").addEventListener("marker", function (event) {
-				    // Prevent the browser's context menu from appearing
-				    event.preventDefault();
-
-				    // Add marker
-				    // L.marker([lat, lng], ....).addTo(map);
-				    alert(lat + ' - ' + lng);
-
-				    return false; // To disable default popup.
-				});
 				var osmGeocoder = new L.Control.OSMGeocoder({
 					collapsed: false,
 					position: 'topright',
