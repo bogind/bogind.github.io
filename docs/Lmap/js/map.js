@@ -18,7 +18,7 @@
 				function onEachFeature(feature, layer) {
 				if (feature.properties && feature.properties.Neighborho) {
 				layer.bindPopup(
-					"<font size='12'>Rahat Municipility</font></br>" + 			
+					'<p style="font-size:16px">Rahat Municipility</p></br>' + 			
 					"<b>Neighborhood:  </b>" + 
 								feature.properties.Neighborho+
 								"</br><b> Lot #: </b>" +
