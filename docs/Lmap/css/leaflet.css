@@ -464,6 +464,7 @@
 	text-align: left;
 	border-radius: 12px;
 	background-color:#80d4ff;
+	background: #80d4ff;
 	}
 .leaflet-popup-content {
 	margin: 13px 19px;
@@ -496,7 +497,7 @@
 	}
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
-	background: white;
+	background:  #80d4ff;
 	color: #333;
 	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
 	}
