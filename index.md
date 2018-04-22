@@ -18,7 +18,8 @@ updates about each repository are posted below.
 <img src ="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.svg?v=6e4af45f4d66" width="25" height="25"/> My StackOverflow profile [Dror Bogin](https://stackoverflow.com/users/5874767/dror-bogin)    
 <img src ="https://image.flaticon.com/icons/png/512/174/174857.png" width="25" height="25"/> My LinkedIn profile [Dror Bogin](https://www.linkedin.com/in/dror-bogin-637809117/)
         
+### Some Leaflet.JS Sample Maps    
+    
+[Map of case study results, Be'er Sheva SIRI RT data](/docs/FirstProject/index.html)      
         
-[JS Course 1st Project](/docs/FirstProject/index.html)      
-        
-[Sample map with Rahat Municipal data](/docs/Lmap/index.html)
+[Sample map with Rahat Municipal lots data](/docs/Lmap/index.html)
