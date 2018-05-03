@@ -23,7 +23,9 @@ p {
    font-family: Arial, Verdana, sans-serif;
     box-sizing:border-box;
 }
-
+h1{
+    font-size: 36px;
+}
 h2{
  color: #3E0B21;
 font-size: 24px;
