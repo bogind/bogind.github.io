@@ -1,6 +1,8 @@
 body {
     background-color: 	rgb(219, 240, 240);
-    
+    border-width: 2px;
+    line-height: 1.5;
+    text-align:left;    
 }
 p {
   overflow: hidden;
@@ -13,10 +15,10 @@ p {
    font-family: Arial, Verdana, sans-serif;
 }
 
-.h2
-{
+.h2{
  color: blue;
 }
+
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
