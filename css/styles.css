@@ -84,6 +84,7 @@ font-size: 24px;
 .Python {width: 40%; background-image: url(../images/Python_colors.png);} /* Python Blue And Yellow */
 .HTML5 {width: 50%; background-color: #F16528;} /* HTML 5 Orange */
 .CSS3 {width: 50%; background-color: #006FB7 ;} /* CSS3 Blue */
+.JS {width: 50%; background-color: #E3B926 ;} /* JS Blue */
 .QGIS {width: 80%; background-color: #699734;} /* QGIS 3 Green */
 .ArcGIS {width: 90%; background-color: #80CFE4;} /* Some light blue from the ArcGIS desktop icon */
 .MSoffice {width: 100%; background-image: url(../images/MSoffice_colors.png);} /* MS office colors */
@@ -103,6 +104,10 @@ font-size: 24px;
 .CSS3 { 
   width:50%;  
   animation:CSS3 2s ease-out;
+}
+.JS { 
+  width:50%;  
+  animation:JS 2s ease-out;
 }
 .QGIS { 
   width:80%;  
@@ -131,6 +136,10 @@ font-size: 24px;
 @keyframes CSS3 {
   0%  { width:0px;}
   100%{ width:50%;}
+}
+@keyframes JS {
+  0%  { width:0px;}
+  100%{ width:40%;}
 }
 @keyframes QGIS {
   0%  { width:0px;} 
