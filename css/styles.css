@@ -2,7 +2,12 @@ body {
     background-color: 	rgb(179, 236, 255);
     
 }
-
+p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 
 * {
    font-family: Arial, Verdana, sans-serif;
