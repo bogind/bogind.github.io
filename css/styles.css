@@ -82,31 +82,36 @@ font-size: 24px;
     color: white; /* White text color */
 }
 
-.Rlang {width: 95%; background-color: #F78628;} /* Green */
-.Python {width: 40%; background-color: #2196F3;} /* Blue */
-.HTML5 {width: 50%; background-color: #f44336;} /* Red */
-.QGIS {width: 80%; background-color: #808080;} /* Dark Grey */
-.ArcGIS {width: 90%; background-color: #808080;} /* Dark Grey */
+.Rlang {width: 95%; background-color: #1C65AE;} /*R Blue */
+.Python {width: 40%; background-image: url(../images/Python_colors.png);} /* Python Blue And Yellow */
+.HTML5 {width: 50%; background-color: #F16528;} /* HTML 5 Orange */
+.CSS3 {width: 50%; backgroud-color: #0071BA ;} /* CSS3 Blue */
+.QGIS {width: 80%; background-color: #699734;} /* QGIS 3 Green */
+.ArcGIS {width: 90%; background-color: #80CFE4;} /* Some light blue from the ArcGIS desktop icon */
 
 .Rlang { 
   width:95%;  
-  animation:Rlang 2s ease-out;
+  animation:Rlang 0.5s ease-out;
 }
 .Python { 
   width:40%;
-  animation:Python 2s ease-out; 
+  animation:Python 1s ease-out; 
 }
 .HTML5 { 
   width:50%;  
-  animation:HTML5 2s ease-out;
+  animation:HTML5 1.5s ease-out;
+}
+.CSS3 { 
+  width:50%;  
+  animation:CSS3 2s ease-out;
 }
 .QGIS { 
   width:80%;  
-  animation:QGIS 2s ease-out;
+  animation:QGIS 2.5s ease-out;
 }
 .ArcGIS { 
   width:90%;  
-  animation:ArcGIS 2s ease-out;
+  animation:ArcGIS 3s ease-out;
 }
 @keyframes Rlang { 
   0%  { width:0px;} 
@@ -117,6 +122,10 @@ font-size: 24px;
   100%{ width:40%;}  
 }
 @keyframes HTML5 {
+  0%  { width:0px;}
+  100%{ width:50%;}
+}
+@keyframes CSS3 {
   0%  { width:0px;}
   100%{ width:50%;}
 }
