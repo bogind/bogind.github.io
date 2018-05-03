@@ -86,6 +86,7 @@ font-size: 24px;
 .CSS3 {width: 50%; backgroud-color: #006FB7 ;} /* CSS3 Blue */
 .QGIS {width: 80%; background-color: #699734;} /* QGIS 3 Green */
 .ArcGIS {width: 90%; background-color: #80CFE4;} /* Some light blue from the ArcGIS desktop icon */
+.MSoffice {width: 100%; background-image: url(../images/MSoffice_colors.png);} /* MS office colors */
 
 .Rlang { 
   width:95%;  
@@ -111,6 +112,10 @@ font-size: 24px;
   width:90%;  
   animation:ArcGIS 3s ease-out;
 }
+.MSoffice { 
+  width:100%;  
+  animation:MSoffic 3.5s ease-out;
+}
 @keyframes Rlang { 
   0%  { width:0px;} 
   100%{ width:95%;}  
@@ -134,4 +139,8 @@ font-size: 24px;
 @keyframes ArcGIS {
   0%  { width:0px;} 
   100%{ width:90%;}  
+}
+@keyframes MSoffice {
+  0%  { width:0px;} 
+  100%{ width:100%;}  
 }
