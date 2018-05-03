@@ -1,14 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Exo);
-html {
-  background: #161616 url(http://i43.tinypic.com/sfgmc3.gif);
-}
 body {
     background-color: 	rgb(219, 240, 240);
     border-width: 2px;
     line-height: 1.5;
     text-align:left; 
     font-size: 12px;
+    color: #fff;
+    width: 300px;
+    margin: 20px auto;
     font-family: 'Ubuntu', sans-serif;
+
 }
 
 p {
@@ -66,10 +67,47 @@ font-size: 24px;
     .sidenav a {font-size: 18px;}
 }
 
+body {
+
+}
+
+p{
+  color:#525252;
+  font-size:12px;
+}
 
 .skills {
+  width:inherit;
   position:relative;
   float:left;
+  padding:30px 0;
+}
+
+ul { 
+  padding-top:50px;
+  & > li { 
+    margin-bottom:70px; 
+    background:#000; 
+    height:5px; 
+    border-radius:3px; 
+    border-left:1px solid #111; 
+    border-top:1px solid #111; 
+    border-right:1px solid #333; 
+    border-bottom:1px solid #333;
+    & em {
+      font-family: 'Exo', sans-serif;
+      font-size: 18px;
+      position:relative; 
+      top:-30px;
+    }
+    & span { 
+      height:1px; 
+      margin:2px 0; 
+      background:#2187e7; 
+      position:absolute;
+      box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
+    }
+  }
 }
 
 .Rlang { 
