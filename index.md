@@ -1,3 +1,6 @@
+Title: A page with a defined style
+CSS: myStyle.css
+
 ## Welcome to Dror Bogin's GitHub Page    
 
 This page exists mostly so i will work on my MarkDown and HTML but if you run across it you can check out my repositories and such.   
