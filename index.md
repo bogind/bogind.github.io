@@ -1,5 +1,6 @@
-Title: A page with a defined style
-CSS: myStyle.css
+```css
+
+```
 
 ## Welcome to Dror Bogin's GitHub Page    
 
