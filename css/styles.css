@@ -71,7 +71,7 @@ font-size: 24px;
 }
 /* Container for skill bars */
 .container {
-    width: 100%; /* Full width */
+    width: 450px; /* Full width */
     background-color: #ddd; /* Grey background */
 }
 
