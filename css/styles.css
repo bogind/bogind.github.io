@@ -13,6 +13,10 @@ hr{box-sizing:content-box;height:0;overflow:visible}
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    text-align: justify;
+}
+td{
+font-size: 13px;
 }
 p {
   overflow: hidden;
