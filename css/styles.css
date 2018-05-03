@@ -8,9 +8,7 @@ body {
     line-height: 1.5;
     text-align:left; 
     font-size: 12px;
-    margin: 20px auto;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 p {
@@ -68,20 +66,10 @@ font-size: 24px;
     .sidenav a {font-size: 18px;}
 }
 
-body {
-
-}
-
-p{
-  color:#525252;
-  font-size:12px;
-}
 
 .skills {
-  width:inherit;
   position:relative;
   float:left;
-  padding:30px 0;
 }
 
 ul { 
