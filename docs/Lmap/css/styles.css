@@ -71,3 +71,25 @@ html, body, #map {
     left: 10px;
 	z-index: 800;
 }
+
+.right-dash {
+  width: 20%;
+  height: 100%;
+  border: 2px dashed lightblue;
+  border-radius: 2px;
+  background-color: rgba(0, 204, 153,0.125);
+  right: 0;
+  position: fixed;
+  top: 0.5px;
+}
+
+.weather {
+	height: 150px;
+	width: 20%;
+	background-color: rgba(204, 255, 51, 0.15);
+	right: 0;
+	position: fixed;
+	top: 0.01px;
+	border: 2px dashed black;
+	
+}
