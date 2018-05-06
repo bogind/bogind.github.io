@@ -2,7 +2,7 @@ var weather = null;
 var url = null;
 var response = null;
 			
-var url = "http://api.openweathermap.org/data/2.5/forecast?lat=31.251155&lon=34.790096&APPID=af8e5cb5dff6f10ae68f0ab2470991cb&units=metric";
+var url = "https://api.openweathermap.org/data/2.5/forecast?lat=31.251155&lon=34.790096&APPID=af8e5cb5dff6f10ae68f0ab2470991cb&units=metric";
 			
 			$.ajax({
 				  type: 'GET',
