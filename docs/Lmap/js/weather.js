@@ -12,8 +12,8 @@ var url = "https://api.openweathermap.org/data/2.5/forecast?lat=31.251155&lon=34
 					$("#clouds").html(" Cloud Cover: "+ weather.list[0].weather[0].description + ", " + weather.list[0].clouds["all"]+"%");
 					$("#temp").html(" Temperature: "+ weather.list[0].main.temp +
 							"<br> Humidity: " + weather.list[0].main.humidity+"%" );
-					if('rain' in weather.list[0]){
-						$("#rain").html(" Percipitation: "+ weather.list[0].rain["3h"]);
+					if('rain' in weather.list[0] & '3h' in weather.list[0].rain){
+						$("#rain").html(" Precipitation: "+ weather.list[0].rain["3h"]);
 					}
 					
 				  },
