@@ -85,8 +85,8 @@ font-size: 24px;
 
 .skills {
     text-align: right; /* Right-align text */
-    padding-right: 20px; /* Add some right padding */
-    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    padding-right: 40px; /* Add some right padding */
+    line-height: 20px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
     color: white; /* White text color */
 }
 
@@ -101,35 +101,35 @@ font-size: 24px;
 
 .Rlang { 
   width:95%;  
-  animation:Rlang 0.5s ease-out;
+  animation:Rlang 2.5s ease-out;
 }
 .Python { 
   width:40%;
-  animation:Python 1s ease-out; 
+  animation:Python 3s ease-out; 
 }
 .HTML5 { 
   width:50%;  
-  animation:HTML5 1.5s ease-out;
+  animation:HTML5 3.5s ease-out;
 }
 .CSS3 { 
   width:50%;  
-  animation:CSS3 2s ease-out;
+  animation:CSS3 4s ease-out;
 }
 .JS { 
   width:50%;  
-  animation:JS 2s ease-out;
+  animation:JS 4.5s ease-out;
 }
 .QGIS { 
   width:80%;  
-  animation:QGIS 2.5s ease-out;
+  animation:QGIS 5.5s ease-out;
 }
 .ArcGIS { 
   width:90%;  
-  animation:ArcGIS 3s ease-out;
+  animation:ArcGIS 6s ease-out;
 }
 .MSoffice { 
   width:100%;  
-  animation:MSoffic 3.5s ease-out;
+  animation:MSoffic 6.5s ease-out;
 }
 @keyframes Rlang { 
   0%  { width:0px;} 
