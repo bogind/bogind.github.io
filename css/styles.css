@@ -91,6 +91,7 @@ font-size: 24px;
 }
 
 .Rlang {width: 95%; background-color: #1C65AE;} /*R Blue */
+.SQL {width: 75%; background-color: #68bff9;} /*R Blue */
 .Python {width: 40%; background-image: url(../images/Python_colors.png);} /* Python Blue And Yellow */
 .HTML5 {width: 50%; background-color: #F16528;} /* HTML 5 Orange */
 .CSS3 {width: 50%; background-color: #006FB7 ;} /* CSS3 Blue */
@@ -103,13 +104,17 @@ font-size: 24px;
   width:95%;  
   animation:Rlang 2.5s ease-out;
 }
+.SQL { 
+  width:75%;  
+  animation:Rlang 2.5s ease-out;
+}
 .Python { 
   width:40%;
   animation:Python 3s ease-out; 
 }
 .HTML5 { 
   width:50%;  
-  animation:HTML5 3.5s ease-out;
+  animation:HTML5 4s ease-out;
 }
 .CSS3 { 
   width:50%;  
@@ -117,7 +122,7 @@ font-size: 24px;
 }
 .JS { 
   width:50%;  
-  animation:JS 4.5s ease-out;
+  animation:JS 4s ease-out;
 }
 .QGIS { 
   width:80%;  
@@ -134,6 +139,10 @@ font-size: 24px;
 @keyframes Rlang { 
   0%  { width:0px;} 
   100%{ width:95%;}  
+}
+@keyframes SQL { 
+  0%  { width:0px;} 
+  100%{ width:75%;}  
 }
 @keyframes Python {
   0%  { width:0px;} 
