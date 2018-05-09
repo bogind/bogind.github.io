@@ -39,7 +39,9 @@ h2{
 font-size: 24px;
   margin-bottom: 25px;
 }
-
+h3{
+    font-size: 32px;
+}
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
