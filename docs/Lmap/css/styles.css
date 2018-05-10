@@ -77,23 +77,23 @@ html, body, #map {
   height: 100%;
   border: 2px dashed lightblue;
   border-radius: 2px;
-  background-color: rgb(0, 0, 230,0.125);
+  background-color: rgb(18, 88, 220);
   right: 0;
   position: fixed;
   top: 0.5px;
 }
 
 .right-dash p {
-	color: rgb(255,255,255)
+	color: rgb(255,255,255);
 }
 
 .right-dash span {
-	color: rgb(255,255,255)
+	color: rgb(255,255,255);
 }
 .weather {
 	height: 150px;
 	width: 20%;
-	background-color: rgba(204, 255, 51, 0.15);
+	background-color: rgba(251, 134, 4,0.25);
 	right: 0;
 	position: fixed;
 	top: 0.01px;
