@@ -6,7 +6,7 @@ var url = "https://api.openweathermap.org/data/2.5/forecast?lat=31.251155&lon=34
 		
 		function expand_weather(){
 				document.getElementById("weather-dash").style.display = "block";
-				document.getElementById("open-weather").style.display = "none";
+				
 			$.ajax({
 				  type: 'GET',
 				  url: url,
@@ -33,7 +33,7 @@ var url = "https://api.openweathermap.org/data/2.5/forecast?lat=31.251155&lon=34
 
 		function close_weather(){
 				document.getElementById("weather-dash").style.display = "none";
-				document.getElementById("close-weather").style.display = "block";
+				
             }
 
 		}
