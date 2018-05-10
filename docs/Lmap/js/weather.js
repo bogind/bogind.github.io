@@ -38,8 +38,8 @@ var response = null;
 
 		function close_weather(){
 				
-				document.getElementById("map").style.width = "95%";
-				document.getElementById("right-dahsboard").style.width = "5%";
+				document.getElementById("map").style.width = "97%";
+				document.getElementById("right-dahsboard").style.width = "3%";
 				document.getElementById("weather-dash").style.display = "none";
 				document.getElementById("open-weather").style.display = "block";
 				
