@@ -5,6 +5,9 @@ var response = null;
 		
 		function expand_weather(){
 				document.getElementById("weather-dash").style.display = "block";
+				document.getElementById("map").style.width = "80%";
+				document.getElementById("right-dahsboard").style.width = "20%";
+			
 		
 			var url = "https://api.openweathermap.org/data/2.5/forecast?lat=31.251155&lon=34.790096&APPID=af8e5cb5dff6f10ae68f0ab2470991cb&units=metric";
 				
@@ -34,6 +37,8 @@ var response = null;
 
 		function close_weather(){
 				document.getElementById("weather-dash").style.display = "none";
+				document.getElementById("map").style.width = "95%";
+				document.getElementById("right-dahsboard").style.width = "5%";
 				
             }
 
