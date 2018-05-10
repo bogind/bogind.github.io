@@ -16,7 +16,7 @@ var response = null;
 				  url: url,
 				  success: function(resp) {
 					var weather = resp;
-					$("#weather-icon").html("<img src='http://openweathermap.org/img/w/"+weather.list[0].weather[0]["icon"]+".png' width='25' height='25'/>");
+					$("#weather-icon").html("<img src='https://openweathermap.org/img/w/"+weather.list[0].weather[0]["icon"]+".png' width='25' height='25'/>");
 					$("#clouds").html(" Cloud Cover: "+ weather.list[0].weather[0].description + ", " + weather.list[0].clouds["all"]+"%");
 					$("#temp").html(" Temperature: "+ weather.list[0].main.temp + "&#176C" +
 							"<br> Humidity: " + weather.list[0].main.humidity+"%" );
