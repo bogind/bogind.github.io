@@ -97,6 +97,8 @@ html, body, #map {
 	right: 0;
 	position: fixed;
 	top: 0.01px;
-	border: 2px dashed black;
+	border: 0.25px dashed black;
+	overflow: hidden;
+    	text-overflow: ellipsis; 
 	
 }
