@@ -102,3 +102,15 @@ html, body, #map {
     	text-overflow: ellipsis; 
 	
 }
+.lastclick {
+	height: 150px;
+	width: 20%;
+	background-color: rgb(252, 115, 7);
+	right: 0;
+	position: fixed;
+	top: 150.05px;
+	border: 0.25px dashed black;
+	overflow: hidden;
+    	text-overflow: ellipsis; 
+	
+}
