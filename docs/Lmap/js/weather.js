@@ -20,7 +20,7 @@ var response = null;
 					$("#clouds").html(" Cloud Cover: "+ weather.list[0].weather[0].description + ", " + weather.list[0].clouds["all"]+"%");
 					$("#temp").html(" Temperature: "+ weather.list[0].main.temp + "&#176C" +
 							"<br> Humidity: " + weather.list[0].main.humidity+"%" );
-					if('rain' in weather.list[0] & '3h' in weather.list[0].rain){
+					if('rain' in weather.list[0] && '3h' in weather.list[0].rain){
 						if(typeof w.list[0].rain["3h"] === "undefined"){
 						$("#rain").html("");
 						}else{
