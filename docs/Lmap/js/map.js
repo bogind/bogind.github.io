@@ -153,5 +153,6 @@ function mapClick(e) {
             e.latlng.lng + 
             "<br><b>lat:</b> " + 
             e.latlng.lat)
-}
+};
 
+map.on("click", mapClick);
