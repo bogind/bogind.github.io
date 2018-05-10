@@ -36,9 +36,10 @@ var response = null;
             }
 
 		function close_weather(){
-				document.getElementById("weather-dash").style.display = "none";
+				
 				document.getElementById("map").style.width = "95%";
 				document.getElementById("right-dahsboard").style.width = "5%";
+				document.getElementById("weather-dash").style.display = "none";
 				
             }
 
