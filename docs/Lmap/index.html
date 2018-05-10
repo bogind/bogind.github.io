@@ -40,10 +40,12 @@
 			<script src="js/map.js"></script>
 		</div>
 		<div class="right-dash">
-			<span id="weather-icon"></span>
-			<div class="weather" id="weather-dash">
+			<button id="open-weather" onclick="expand_weather()" style="background: url(images/weather-icon.png)"></button>
+			
+			<div class="weather" id="weather-dash" style="display:none">
+				<button id="close-weather" onclick="close_weather()" >Close &times;</button>
 				<span><span id="weather-dash-top"><font size="4"><u> Current Weather in Rahat</u></font> </span>
-					</span>
+					<span id="weather-icon"></span></span>
 				<p id="clouds"><p>
 				<p id="temp"><p>
 				<p id="rain"><p>
