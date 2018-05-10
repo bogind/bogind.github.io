@@ -5,6 +5,7 @@ var response = null;
 		
 		function expand_info(){
 				document.getElementById("weather-dash").style.display = "block";
+				document.getElementById("last-click-dash").style.display = "block";
 				document.getElementById("map").style.width = "80%";
 				document.getElementById("right-dahsboard").style.width = "20%";
 			
@@ -41,6 +42,7 @@ var response = null;
 				document.getElementById("map").style.width = "97%";
 				document.getElementById("right-dahsboard").style.width = "3%";
 				document.getElementById("weather-dash").style.display = "none";
+				document.getElementById("last-click-dash").style.display = "none";
 				document.getElementById("open-info").style.display = "block";
 				
             }
