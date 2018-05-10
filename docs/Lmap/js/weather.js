@@ -3,7 +3,10 @@ var url = null;
 var response = null;
 			
 var url = "https://api.openweathermap.org/data/2.5/forecast?lat=31.251155&lon=34.790096&APPID=af8e5cb5dff6f10ae68f0ab2470991cb&units=metric";
-			
+		
+		function expand_weather(){
+				document.getElementById("weather-dash").style.display = "block";
+				document.getElementById("open-weather").style.display = "none";
 			$.ajax({
 				  type: 'GET',
 				  url: url,
@@ -26,3 +29,11 @@ var url = "https://api.openweathermap.org/data/2.5/forecast?lat=31.251155&lon=34
 				   console.log('error')
 				  }
 				});
+            }
+
+		function close_weather(){
+				document.getElementById("weather-dash").style.display = "none";
+				document.getElementById("close-weather").style.display = "block";
+            }
+
+		}
