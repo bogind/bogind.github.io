@@ -33,6 +33,7 @@ var response = null;
 				   console.log('error')
 				  }
 				});
+			document.getElementById("open-weather").style.display = "none";
             }
 
 		function close_weather(){
