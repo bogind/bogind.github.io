@@ -3,7 +3,7 @@ var url = null;
 var response = null;
 			
 		
-		function expand_weather(){
+		function expand_info(){
 				document.getElementById("weather-dash").style.display = "block";
 				document.getElementById("map").style.width = "80%";
 				document.getElementById("right-dahsboard").style.width = "20%";
@@ -33,7 +33,7 @@ var response = null;
 				   console.log('error')
 				  }
 				});
-			document.getElementById("open-weather").style.display = "none";
+			document.getElementById("open-info").style.display = "none";
             }
 
 		function close_weather(){
@@ -41,7 +41,7 @@ var response = null;
 				document.getElementById("map").style.width = "97%";
 				document.getElementById("right-dahsboard").style.width = "3%";
 				document.getElementById("weather-dash").style.display = "none";
-				document.getElementById("open-weather").style.display = "block";
+				document.getElementById("open-info").style.display = "block";
 				
             }
 
