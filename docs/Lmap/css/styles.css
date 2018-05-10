@@ -93,7 +93,7 @@ html, body, #map {
 .weather {
 	height: 150px;
 	width: 20%;
-	background-color: rgba(251, 134, 4,0.25);
+	background-color: rgb(252, 115, 7);
 	right: 0;
 	position: fixed;
 	top: 0.01px;
