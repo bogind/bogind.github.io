@@ -21,7 +21,7 @@ var response = null;
 					$("#temp").html(" Temperature: "+ weather.list[0].main.temp + "&#176C" +
 							"<br> Humidity: " + weather.list[0].main.humidity+"%" );
 					if('rain' in weather.list[0] & '3h' in weather.list[0].rain){
-						if(typeof w.responseJSON.list[0].rain["3h"] === "undefined"){
+						if(typeof w.list[0].rain["3h"] === "undefined"){
 						$("#rain").html("");
 						}else{
 						$("#rain").html(" Precipitation: "+ weather.list[0].rain["3h"]);
