@@ -75,13 +75,14 @@ html, body, #map {
 .right-dash {
   width: 20%;
   height: 100%;
-  border: 2px dashed lightblue;
-  border-radius: 2px;
-  background-color: rgb(18, 88, 220);
+  border: 2px solid #1F4A5B;
+  border-radius: 3px;
+  background-color: #06181F;
   right: 0;
   position: fixed;
   top: 0.5px;
 }
+
 
 .right-dash p {
 	color: rgb(255,255,255);
@@ -93,11 +94,11 @@ html, body, #map {
 .weather {
 	height: 150px;
 	width: 20%;
-	background-color: rgb(252, 115, 7);
+	background-color: #1F4A5B;
 	right: 0;
 	position: fixed;
 	top: 0.01px;
-	border: 0.25px dashed black;
+	border: 0.25px dashed #FE786C;
 	overflow: hidden;
     	text-overflow: ellipsis; 
 	
@@ -105,11 +106,11 @@ html, body, #map {
 .lastclick {
 	height: 150px;
 	width: 20%;
-	background-color: rgb(252, 115, 7);
+	background-color: #1F4A5B;
 	right: 0;
 	position: fixed;
 	top: 150.05px;
-	border: 0.25px dashed black;
+	border: 0.25px dashed #FE786C;
 	overflow: hidden;
     	text-overflow: ellipsis; 
 	
