@@ -152,7 +152,7 @@ function mapClick(e) {
     $("#last-click").html( "<br><p>You last clicked the map at -<br><b>lon:</b> " + 
             e.latlng.lng + 
             "<br><b>lat:</b> " + 
-            e.latlng.lat+"</p>)
+            e.latlng.lat+"</p>")
 };
 
 map.on("click", mapClick);
