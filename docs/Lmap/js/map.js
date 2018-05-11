@@ -149,10 +149,10 @@ function mapClick(e) {
     // Get clicked coordinates
     var coords = e.latlng;
 
-    $("#last-click").html( "You clicked the map at -<br><b>lon:</b> " + 
+    $("#last-click").html( "<br><p>You last clicked the map at -<br><b>lon:</b> " + 
             e.latlng.lng + 
             "<br><b>lat:</b> " + 
-            e.latlng.lat)
+            e.latlng.lat+"</p>)
 };
 
 map.on("click", mapClick);
