@@ -144,15 +144,29 @@
 				});
 				osmGeocoder.addTo(map);
 
+function roundToFive(num) {    
+					return +(Math.round(num + "e+5")  + "e-5");
+				}
+				
 function mapClick(e) {
     
     // Get clicked coordinates
     var coords = e.latlng;
+	var zoom = map.getZoom();
 
-    $("#last-click").html( "<br><p>You last clicked the map at -<br><b>lon:</b> " + 
-            e.latlng.lng + 
-            "<br><b>lat:</b> " + 
-            e.latlng.lat+"</p>")
+    $("#last-click").html( "<br><p>You last clicked the map at -<br><b>lat:</b> " + 
+            roundToFive(e.latlng.lat) + 
+            "<br><b>Long:</b> " + 
+            roundToFive(e.latlng.lng)+"</p>"+
+           "<span>see this location on <a target='_blank' href='https://www.google.com/maps/?q="+ 
+		   e.latlng.lat +","+ e.latlng.lng +
+		   "' ><img src='https://vignette.wikia.nocookie.net/logopedia/images/3/35/Googlemapsicon2015.png/revision/latest/scale-to-width-down/173?cb=20150901185327' height='25' width='25'/></a>"+
+		   "</span><br>"+
+		   "<span>see this location on <a target='_blank' href='https://wego.here.com/?map="+
+		   e.latlng.lat +","+ e.latlng.lng +
+		   ","+zoom+",normal'>"+
+		   "<img src='https://www.here.com/sites/all/themes/herecorporate/build/img/here-logo.svg'  height='25' width='25'/>"+
+			"</span>")
 };
 
 map.on("click", mapClick);
