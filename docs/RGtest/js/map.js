@@ -126,24 +126,27 @@
 				
 				
 
-function searchAddresses(){
-		
-		$("#search").click(function(){
-		
-	  var inText = document.getElementById("addIn").value.toString().trim()
-		for (var i=0 ; i < addresses.features.length ; i++)
-		{
-			if (addresses.features[i].properties["pt_address"] == inText) {
-				console.log("success");
-					coords = [addresses.features[i].geometry.coordinates[1],addresses.features[i].geometry.coordinates[0]]
-					L.marker(coords).addTo(map);
-					map.setView(coords, 16); 
-	
-			}
-		}
+				var clickmark;
+
+				function searchAddresses(){
+						
+						$("#search").click(function(){
+						
+					  var inText = document.getElementById("addIn").value.toString().trim()
+						for (var i=0 ; i < addresses.features.length ; i++)
+						{
+							if (addresses.features[i].properties["pt_address"] == inText) {
+								if (addfound != undefined) {
+								  map.removeLayer(addfound);
+								};
+								console.log("success");
+									coords = [addresses.features[i].geometry.coordinates[1],addresses.features[i].geometry.coordinates[0]]
+									addfound = L.marker(coords).addTo(map);
+									map.setView(coords, 16); 
+					
+							}
+						}
 
 
-  });
-};
-	
-	
+				  });
+				};
