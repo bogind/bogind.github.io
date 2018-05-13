@@ -126,7 +126,7 @@
 				
 				
 
-				var clickmark;
+				var addfound;
 
 				function searchAddresses(){
 						
