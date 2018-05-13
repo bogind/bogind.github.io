@@ -117,7 +117,7 @@
 				var osmGeocoder = new L.Control.OSMGeocoder({
 					collapsed: false,
 					position: 'topright',
-					text: 'Search',
+					text: 'OSM Search',
 				});
 				osmGeocoder.addTo(map);
 				
