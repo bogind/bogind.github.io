@@ -150,3 +150,11 @@
 
 				  });
 				};
+
+				var searchCtrl = L.control.fuseSearch()
+				searchCtrl.addTo(map);
+				searchCtrl.indexFeatures(addresses, ['pt_address']);
+
+
+
+
