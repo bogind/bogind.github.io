@@ -19,28 +19,30 @@ td{
 font-size: 13px;
 }
 p {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-     color:#525252;
-  font-size:12px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	color:#ffffff;
+	font-size:14px;
 }
 
 * {
-   font-family: Arial, Verdana, sans-serif;
+    font-family: Arial, Verdana, sans-serif;
     box-sizing:border-box;
 }
 h1{
     font-size: 36px;
+	color:#ffffff;
 }
 h2{
- color: #3E0B21;
-font-size: 24px;
-  margin-bottom: 25px;
+	color: #ffffff;
+	font-size: 24px;
+	margin-bottom: 25px;
 }
 h3{
     font-size: 32px;
+	color: #ffffff;
 }
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -202,11 +204,46 @@ h3{
      set background images as `url(/path/to/image)` here, 
      separated by commas 
   */
-  background-image: url("/images/esriWorldviw/capture1.png"), 
-    url("/images/esriWorldviw/capture2.png"), 
-    url("/images/esriWorldviw/capture3.png"), 
-    url("/images/esriWorldviw/capture4.png"), 
-    url("/images/esriWorldviw/capture5.png");
+  background-image: url("../images/esriWorldview/Capture1.PNG"), 
+    url("../images/esriWorldview/Capture2.PNG"), 
+    url("../images/esriWorldview/Capture3.PNG"), 
+    url("../images/esriWorldview/Capture4.PNG"), 
+    url("../images/esriWorldview/Capture5.PNG"),
+	url("../images/esriWorldview/Capture6.PNG"), 
+	url("../images/esriWorldview/Capture7.PNG"), 
+	url("../images/esriWorldview/Capture8.PNG"), 
+	url("../images/esriWorldview/Capture9.PNG"), 
+	url("../images/esriWorldview/Capture10.PNG"), 
+	url("../images/esriWorldview/Capture11.PNG"), 
+	url("../images/esriWorldview/Capture12.PNG"), 
+	url("../images/esriWorldview/Capture13.PNG"), 
+	url("../images/esriWorldview/Capture14.PNG"), 
+	url("../images/esriWorldview/Capture15.PNG"), 
+	url("../images/esriWorldview/Capture16.PNG"), 
+	url("../images/esriWorldview/Capture17.PNG"), 
+	url("../images/esriWorldview/Capture18.PNG"), 
+	url("../images/esriWorldview/Capture19.PNG"), 
+	url("../images/esriWorldview/Capture20.PNG"), 
+	url("../images/esriWorldview/Capture21.PNG"), 
+	url("../images/esriWorldview/Capture22.PNG"), 
+	url("../images/esriWorldview/Capture23.PNG"), 
+	url("../images/esriWorldview/Capture24.PNG"), 
+	url("../images/esriWorldview/Capture25.PNG"), 
+	url("../images/esriWorldview/Capture26.PNG"), 
+	url("../images/esriWorldview/Capture27.PNG"), 
+	url("../images/esriWorldview/Capture28.PNG"), 
+	url("../images/esriWorldview/Capture29.PNG"), 
+	url("../images/esriWorldview/Capture30.PNG"), 
+	url("../images/esriWorldview/Capture31.PNG"), 
+	url("../images/esriWorldview/Capture32.PNG"), 
+	url("../images/esriWorldview/Capture33.PNG"), 
+	url("../images/esriWorldview/Capture34.PNG"), 
+	url("../images/esriWorldview/Capture35.PNG"), 
+	url("../images/esriWorldview/Capture36.PNG"), 
+	url("../images/esriWorldview/Capture37.PNG"), 
+	url("../images/esriWorldview/Capture38.PNG"), 
+	url("../images/esriWorldview/Capture39.PNG"), 
+	url("../images/esriWorldview/Capture40.PNG");
   background-size: cover, 0px, 0px, 0px;
 /* set transtitions at 3000ms 
   -webkit-transition: background-image 3000ms linear;

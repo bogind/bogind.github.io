@@ -17,10 +17,10 @@
 		// set, reset, delay to `1000` after background image reset
 		elem.css("backgroundImage", bgimg)
 		  // fade in background image
-		  .fadeTo(3000, 1, "linear", function() {
+		  .fadeTo(1500, 1, "linear", function() {
 			// set `delay` before fadeing out image
 			// fade in background image        
-			$(this).delay(3000, "fx").fadeTo(3000, 0, "linear", function() {
+			$(this).delay(7500, "fx").fadeTo(1500, 0, "linear", function() {
 			  // split background image string at comma , creating array
 			  var img = $(this).css("backgroundImage").split(","),
 				// concat first background image to `img` array,
@@ -30,7 +30,7 @@
 			  cycleBgImage(elem, bgimg);
 			});
 		  });
-		  }($("#slideshow")));
+		  }($("#main")));
 		});
 		</script>
     </head>
@@ -43,7 +43,7 @@
           <a href="/docs/Contact_information.html">Contact</a>
         </div>
         <div class="main" id="main">
-        <center><h1> Welcome to Dror Bogin's GitHub Page</h1></center>
+        <center><h1 style="color:#ffffff;"> Welcome to Dror Bogin's GitHub Page</h1></center>
             <hr>
         <p style=" max-width: 550px;">
         This site exists mostly so i will work on my HTML, CSS and maybe some JS but if you run across it you can check out my repositories and such.
