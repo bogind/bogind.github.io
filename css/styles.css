@@ -72,6 +72,10 @@ h3{
 .main {
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
+	background: #000;
+	display:block;
+	width:inherit;
+	height:inherit;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -180,3 +184,35 @@ h3{
     margin:20px 0;
     box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
         !important}
+
+
+.slideshow {
+  background: #000;
+  display:block;
+  width:inherit;
+  height:inherit;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.0;
+  background-color: #000;
+  /* 
+     set background images as `url(/path/to/image)` here, 
+     separated by commas 
+  */
+  background-image: url("/images/esriWorldviw/capture1.png"), 
+    url("/images/esriWorldviw/capture2.png"), 
+    url("/images/esriWorldviw/capture3.png"), 
+    url("/images/esriWorldviw/capture4.png"), 
+    url("/images/esriWorldviw/capture5.png");
+  background-size: cover, 0px, 0px, 0px;
+/* set transtitions at 3000ms 
+  -webkit-transition: background-image 3000ms linear;
+  -moz-transition: background-image 3000ms linear;
+  -ms-transition: background-image 3000ms linear;
+  -o-transition: background-image 3000ms linear;
+  transition: background-image 3000ms linear;
+    */
+}
