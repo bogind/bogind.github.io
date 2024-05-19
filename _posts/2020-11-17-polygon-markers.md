@@ -12,15 +12,10 @@ comments: true
 author: Dror Bogin
 ---
 
-![]({{ '/assets/img/blog/polygon_markers_1.png' | relative_url }})
+![]({{ '/assets/img/blog/polygon_markers_0.png' | relative_url }})
 
-<p>
-<span style="font-family: arial;"></span></p>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="https://github.com/bogind/flights/raw/master/preview.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="394" data-original-width="800" height="315" src="https://github.com/bogind/flights/raw/master/preview.png" width="640" /></a>
-</div>
-<br />&nbsp;<p></p>
-<h3 style="text-align: left;"><span style="font-family: arial;">&nbsp;<u>How I Got Into This<br /></u></span></h3><p><span style="font-family: arial;">About a year ago my wife's younger brother asked me to help him get started with programming (Thats lasted a week), I suggested he start with JavaScript since you get instant gratification when things work.</span></p>
+<h3 style="text-align: left;"><u>How I Got Into This</u></h3>
+About a year ago my wife's younger brother asked me to help him get started with programming (Thats lasted a week), I suggested he start with JavaScript since you get instant gratification when things work.
 <p><span style="font-family: arial;">The kid likes airplanes so I thought a nice project will be making a simple airplanes map, something querying some open API and updating the map at intervals.</span></p>
 <p><span style="font-family: arial;">After asking around I got recommended to use <a href="https://opensky-network.org/apidoc/" rel="nofollow" target="_blank">OpenSky-Network's API</a> <br /></span>
 </p>
