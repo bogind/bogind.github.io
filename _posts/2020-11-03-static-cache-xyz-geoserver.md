@@ -2,10 +2,10 @@
 layout: post
 title: Creating A Static Cache of XYZ tiles with GeoServer
 tags: [XYZ tiles,GeoServer,tiling,cache,caching]
-thumbnail-img: /assets/img/blog/xyz_cache_0.png
+thumbnail-img: /assets/img/blog/xyz_cache_6.png
 share-title: Creating A Static Cache of XYZ tiles with GeoServer
 share-description: Create a static cache of XYZ (slippy) tiles from GeoServer
-share-img: /assets/img/blog/xyz_cache_3.png
+share-img: /assets/img/blog/xyz_cache_6.png
 comments: true
 author: Dror Bogin
 ---
@@ -29,30 +29,30 @@ single thread and across the seed job</span></li></ul><p><span style="font-famil
 <p><span style="font-family: arial;">What you need to do is go to <b>Tile Caching</b> &rarr; <b>BlobStores<br /></b></span></p>
 <div class="separator" style="clear: both; text-align: center;">
 
-![]({{ '/assets/img/blog/xyz_cache_0.png' }} | relative_url)
+![]({{ '/assets/img/blog/xyz_cache_0.png' | relative_url }})
 
 </div>
 <p><span style="font-family: arial;">And create a new File Blobstore with the following settings:<br /></span></p><ul style="text-align: left;"><li><span style="font-family: arial;">A Base directory where all the new layer/layer groups folder will be created.</span></li><li><span style="font-family: arial;">Tiles directory layout should be <b><u>SLIPPY</u></b>, not GeoWebCache Default which can't be translated directly without GeoWebCache and not TMS Which uses a reverse Y coordinate.<br /></span></li></ul><p></p><div class="separator" style="clear: both; text-align: center;">
 
-![]({{ '/assets/img/blog/xyz_cache_1.png' }} | relative_url))
+![]({{ '/assets/img/blog/xyz_cache_1.png' | relative_url }})
 
 </div>
 <p><span style="font-family: arial;"></span></p><p><span style="font-family: arial;"></span></p><p><span style="font-family: arial;"></span></p><p><span style="font-family: arial;"></span></p><p><span style="font-family: arial;"><br /></span></p><p><span style="font-family: arial;">What you need to do is go to the layer (or layer group) you want to create tiles from.<br />And set that layer to use the blobstore you created.<br />While You are there, make sure that the format you want to consume the tiles in is switched on.<br /></span></p><p></p><div class="separator" style="clear: both; text-align: center;">
 
-![]({{ '/assets/img/blog/xyz_cache_2.png' }} | relative_url))
+![]({{ '/assets/img/blog/xyz_cache_2.png' | relative_url }})
 
 </div>
 <p><span style="font-family: arial;">You can now seed your static cache and find your files inside the folder of the blob store.</span></p><p><span style="font-family: arial;">In this example the guy asked about creating a geojson tile cache, but you can just change the format. <br /></span></p><div class="separator" style="clear: both; text-align: center;">
 
-![]({{ '/assets/img/blog/xyz_cache_3.png' }} | relative_url))
+![]({{ '/assets/img/blog/xyz_cache_3.png' | relative_url }})
 
-![]({{ '/assets/img/blog/xyz_cache_4.png' }} | relative_url))
+![]({{ '/assets/img/blog/xyz_cache_4.png' | relative_url }})
 
-![]({{ '/assets/img/blog/xyz_cache_5.png' }} | relative_url))
+![]({{ '/assets/img/blog/xyz_cache_5.png' | relative_url }})
 
 
 <p><span style="font-family: arial;">The&nbsp; end result can be uploaded as is anywhere to be used as a static cache.</span></p><div class="separator" style="clear: both; text-align: center;">
 
-![]({{ '/assets/img/blog/xyz_cache_6.png' }} | relative_url))
+![]({{ '/assets/img/blog/xyz_cache_6.png' | relative_url }})
 
 <p><span style="font-family: arial;">And that's it, a bit roundabout but gets the job done.<br /></span></p><div><p><span style="font-family: arial;"> </span></p></div>
