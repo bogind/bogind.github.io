@@ -7,7 +7,6 @@ cover-img: /assets/img/blog/polygon_markers_0.png
 share-title: Using Polygons As Markers in MapLibre\MapBox GL JS
 share-description: How to take a polygon and use it as a marker in MapLibre\MapBox GL JS
 share-img: /assets/img/blog/polygon_markers_0.png
-gh-repo: bogind/flights
 comments: true
 author: Dror Bogin
 ---
