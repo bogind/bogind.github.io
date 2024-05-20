@@ -2,11 +2,11 @@
 layout: post
 title: 'Exploring The QGIS Expression Engine, Part 2: What's Missing From Select By Location'
 tags: [QGIS,Expressions,Select Within Distance,aggregate]
-thumbnail-img: /assets/img/blog/qgis_expression_2_dwithin_1.png
-cover-img: /assets/img/blog/qgis_expression_2_dwithin_1.png
+thumbnail-img: /assets/img/blog/qgis_expression_2_dwithin_1.PNG
+cover-img: /assets/img/blog/qgis_expression_2_dwithin_1.PNG
 share-title: 'Exploring The QGIS Expression Engine, Part 2: What's Missing From Select By Location'
 share-description: How to select within distance with the QGIS expression engine
-share-img: /assets/img/blog/qgis_expression_2_dwithin_1.png
+share-img: /assets/img/blog/qgis_expression_2_dwithin_1.PNG
 comments: true
 author: Dror Bogin
 ---
@@ -15,7 +15,7 @@ author: Dror Bogin
 
 For some reason the QGIS **select by location** tool does not allow selecting within a distance, that's something that bothered me over the last few years I've been using QGIS, but creating a buffer and then intersecting wasn't that bad. I mean, even ArcMap has that feature, but no way was I gonna open that mess again.
 
-![]({{ '/assets/img/blog/qgis_expression_2_dwithin_2.png' | relative_url }})
+![]({{ '/assets/img/blog/qgis_expression_2_dwithin_2.PNG' | relative_url }})
 
 This is something done in a not very complicated way with the expression engine, with **select by expression**.
 
@@ -33,7 +33,7 @@ get_feature('Countries_50m',
 
 Now note that the output of this expression is the feature (or row) itself, and not the geometry.
 
-![]({{ '/assets/img/blog/qgis_expression_2_dwithin_3.png' | relative_url }})
+![]({{ '/assets/img/blog/qgis_expression_2_dwithin_3.PNG' | relative_url }})
 
 To get the geometry for that feature, which is the first parameter needed for the `buffer` function, we'll have to wrap the first function with the `geometry` function which accepts a feature.
 
@@ -61,7 +61,7 @@ buffer(
 
 
 
-![Our buffer in purple, visualized with a geometry generator expression]({{ '/assets/img/blog/qgis_expression_2_dwithin_1.png' | relative_url }})
+![Our buffer in purple, visualized with a geometry generator expression]({{ '/assets/img/blog/qgis_expression_2_dwithin_1.PNG' | relative_url }})
 
 We now have the geometry of the buffer we want to use for comparison all we have to do is use an expression for selecting intersecting geometries from our layer.
 Derived attributes of a feature (not a layer) are marked with `$` which we can see in the `$geometry` attribute.
@@ -90,7 +90,7 @@ I'll use the lakes and airports layer from natural earth for this example.
 
 I want to select all the airports within a 1 degree buffer from any lake that borders on more than one country, Like Lake Superior which borders on both the United Stated and Canada.
 
-![The lakes in red are within one country, the airports in black are further away then our rule]({{ '/assets/img/blog/qgis_expression_2_dwithin_4.png' | relative_url }})
+![The lakes in red are within one country, the airports in black are further away then our rule]({{ '/assets/img/blog/qgis_expression_2_dwithin_4.PNG' | relative_url }})
 
 
 But I don't want just Lake Superior, I want all lakes that have that condition. So I'll use the admin field and check for the admin-0 or admin-0 more values.
