@@ -282,7 +282,7 @@ Or, when using the "NAME" attribute from the layer:
 
 
 | ![]({{ '/assets/img/blog/qgis_expression_3_functions_8.png' | relative_url }}) | ![]({{ '/assets/img/blog/qgis_expression_3_functions_9.png' | relative_url }}) |
-| ----------- | ----------- |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
 
 And that's it, simple, custom functions in your expression engine which can be customized to do pretty much what ever you want.
 
