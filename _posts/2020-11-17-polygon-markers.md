@@ -11,9 +11,8 @@ comments: true
 author: Dror Bogin
 ---
 
-![]({{ '/assets/img/blog/polygon_markers_0.png' | relative_url }})
+### How I Got Into This
 
-<h3 style="text-align: left;"><u>How I Got Into This</u></h3>
 About a year ago my wife's younger brother asked me to help him get started with programming (Thats lasted a week), I suggested he start with JavaScript since you get instant gratification when things work.
 <p><span style="font-family: arial;">The kid likes airplanes so I thought a nice project will be making a simple airplanes map, something querying some open API and updating the map at intervals.</span></p>
 <p><span style="font-family: arial;">After asking around I got recommended to use <a href="https://opensky-network.org/apidoc/" rel="nofollow" target="_blank">OpenSky-Network's API</a> <br /></span>
@@ -126,6 +125,8 @@ fetch('https://opensky-network.org/api/states/all')
     })
 
 ```
+
+![]({{ '/assets/img/blog/polygon_markers_0.png' | relative_url }})
 
 The live map is available there as well, if you zoom in on `{lng: 34.8987045, lat: 32.010007}` you can see the original plane I used as a size comparison to all the others :
 
