@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'Exploring The QGIS Expression Engine, Part 2: What's Missing From Select By Location'
+title: "Exploring The QGIS Expression Engine, Part 2: What's Missing From Select By Location"
 tags: [QGIS,Expressions,Select Within Distance,aggregate]
 thumbnail-img: /assets/img/blog/qgis_expression_2_dwithin_1.PNG
 cover-img: /assets/img/blog/qgis_expression_2_dwithin_1.PNG
-share-title: 'Exploring The QGIS Expression Engine, Part 2: What's Missing From Select By Location'
+share-title: "Exploring The QGIS Expression Engine, Part 2: What's Missing From Select By Location"
 share-description: How to select within distance with the QGIS expression engine
 share-img: /assets/img/blog/qgis_expression_2_dwithin_1.PNG
 comments: true
