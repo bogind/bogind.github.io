@@ -4,7 +4,7 @@ title: Dror Bogin
 ---
 
 ### Hello!
-I'm Dror Bogin, a GIS developer and open source GIS advocate,this is my personal site. 
+I'm Dror Bogin, a GIS developer and open source GIS advocate, this is my personal site. 
 
 You can read [about me]({{ '/aboutme' | relative_url }}), check out some of the [projects]({{ '/projects' | relative_url }}) I've worked on, [talks]({{ '/talks' | relative_url }}) I gave, or find my [contact]({{ '/contact' | relative_url }}) information (also at the bottom).
 
