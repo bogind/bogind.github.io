@@ -6,13 +6,13 @@ title: About me
 Hi, I'm <span title="Yes, it's pronounced the same as a drawer">Dror</span> Bogin.  
 I am married to Diana and Father to Noga & Roni.  
 I am a Geographic Information Systems (GIS) Developer with a focus on open source technology. Experienced in creating interactive web maps with JavaScript, processing data with Python and R, and using open source server side applications such as GeoServer and PostGIS, as well as developing instructional material, and plugins, and instructing workshops on QGIS.  
-Also about me:
+I also like:
 
-- I like learning about open source GIS tools.
-- I like exploring QGIS, especially to see what can be done with its expression engine.
-- I like building QGIS plugins.
-- I like building efficient ways to display spatial data online.
-- I like using tools like GDAL, GeoServer and PostGIS for solving problems that can't be handled by proprietary software. 
+- Learning about open source GIS tools.
+- Exploring QGIS, especially to see what can be done with its expression engine.
+- Building QGIS plugins.
+- Building efficient ways to display spatial data online.
+- Using tools like GDAL, GeoServer and PostGIS for solving problems that can't be handled by proprietary software. 
 
 I also like trying out new brands of beer (mostly stouts and ales), Sci-fi and Fantasy books and writing about GIS, code and cool things I found out are not as impossible as one would think, and you can find my blog at [https://bogind.github.io/blog](https://bogind.github.io/blog)
 
@@ -52,11 +52,10 @@ What else?
 - Developing backend services using Python (Flask)
 - Supporting non-GIS developers with geospatial component integration
 
-### Kaplan Open Source Consulting, Israel
+### Kaplan Open Source Consulting, Israel *Subcontractor*
 #### GIS DEVELOPER AND INSTRUCTOR
 ##### 2019-2021
 
--	Designing and writing scripts, code and macros to improve the performance of the GIS platform.
 -	Building interactive maps using Leaflet.js, MapBox GL JS and MapLibre.
 -	Creating QGIS plugins.
 -	Writing content for organizational workshops for QGIS. 
@@ -78,7 +77,7 @@ What else?
 ###### Volunteer - since 2021
 
 ### Israeli QGIS Community (QGIS-IL)
-###### COMMUNITY MANAGER AND FOUNDER - 2023-Present
+###### COMMUNITY MANAGER AND FOUNDER - 2022-Present
 ###### Active Member - since 2015
 
 
