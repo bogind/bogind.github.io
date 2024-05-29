@@ -5,7 +5,8 @@ title: About me
 
 Hi, I'm <span title="Yes, it's pronounced the same as a drawer">Dror</span> Bogin.  
 I am married to Diana and Father to Noga & Roni.  
-I am a Geographic Information Systems (GIS) Developer with a focus on open source technology. Experienced in creating interactive web maps with JavaScript, processing data with Python and R, and using open source server side applications such as GeoServer and PostGIS, as well as developing instructional material, and plugins, and instructing workshops on QGIS.  
+I am a Geographic Information Systems (GIS) Developer with a focus on open source technology.  
+Experienced in creating interactive web maps with JavaScript, processing data with Python and R, and using open source server side applications such as GeoServer and PostGIS, as well as developing instructional material, and plugins, and instructing workshops on QGIS.  
 I also like:
 
 - Learning about open source GIS tools.
