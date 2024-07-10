@@ -88,6 +88,14 @@ This way, if you use a simple python script (which Netta created) you can conver
 A plugin that allows adding prefix proxy addresses to data source connections.
 
 
+### QGIS Sound Effects
+
+[GitHub](https://github.com/bogind/qgs_sound_effects)
+[QGIS Hub](https://plugins.qgis.org/plugins/qgs_sound_effects/)
+
+A (silly) plugin that adds sound effects to QGIS to make work less boring.
+
+
 ### Israeli Open Data Loader
 
 *Created for Kaplan Open Source Inc.*
