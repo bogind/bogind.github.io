@@ -31,7 +31,7 @@ At least in Israel they are used a lot in the public sector since they allow the
 Now here comes the idea.  
 I remembered the MapLibre [example about generating an icon](https://maplibre.org/maplibre-gl-js/docs/examples/add-image-generated/) to be used in the map, and actually read the documentation to see how it works and why is it accepted as an image.  
 
-If you read my [post about using the marker for an entire layer](https://bogind.blogspot.com/2023/04/maplibre-marker-layer.html), you might already know where this is heading, but basically the idea is you can create an object that will be added to the map as an image in multiple ways, either as a JS or HTML image object, use image data or return what can processed as a [StyleImageInterface](https://maplibre.org/maplibre-gl-js/docs/API/interfaces/StyleImageInterface/).  
+If you read my [post about using the marker for an entire layer](https://bogind.com/2023-04-02-maplibre_marker_layer/), you might already know where this is heading, but basically the idea is you can create an object that will be added to the map as an image in multiple ways, either as a JS or HTML image object, use image data or return what can processed as a [StyleImageInterface](https://maplibre.org/maplibre-gl-js/docs/API/interfaces/StyleImageInterface/).  
 
 Basically, you need something that MapLibre can identify as an image, or something that it can tell to render an image from.  
 
