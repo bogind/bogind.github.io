@@ -10,10 +10,7 @@ comments: true
 author: Dror Bogin
 ---
 
-About 2 weeks ago I saw a tweet by Kate Berg, AKA [Pokato]() about how cool would it be if we could make mods for GIS software, like ones for games.
-
-{: .box-note}
-**Note:** This is a notification box.
+About 2 weeks ago I saw a tweet by Kate Berg, AKA [Pokato]() about how cool would it be if we could make mods for GIS software, like ones for games.  
 
 <blockquote class="twitter-tweet" data-dnt="true">
 <p lang="en" dir="ltr">You know how you can mod video games (like replace all dragons in Skyrim with the shape of Ohio)? 
@@ -40,7 +37,7 @@ I checked and found that PyQT had a [`QSound`](https://doc.qt.io/qtforpython-5/P
 I figured that it should a quick 1-2 hours of work to combine the two into a plugin when I get my hands on a computer.
 
 {: .box-error}
-**Error:** My initial intuition was wrong.
+My initial intuition was wrong.
 
 
 As i was away from my computer for the weekend, most of my thinking was done in my head, whatever research i could do in , and through various groups or via a [GIS stackexchange question](https://gis.stackexchange.com/q/483452/108903).  
@@ -51,7 +48,7 @@ It took some time, but I found the [`QgsHistoryProviderRegistry`](https://qgis.o
 While this should have been the end of the "hard" part, I soon found that no matter what i did, when any of the `entryAdded` or `entryUpdated` signals triggered a function, QGIS would crash.  
 
 {: .box-note}
-**Note:** Signals are the way that PyQt communicates between objects, they are the equivalent to events in JavaScript.
+Signals are the way that PyQt communicates between objects, they are the equivalent to events in JavaScript.
 
 This is a good place to note, the history registry only has 3 signals, and I didn't really have anything to do with the `historyCleared` signal.
 
@@ -163,46 +160,11 @@ While it's not in my most urgent tasks, I still have some features in mind I wou
     * Allow the user to select a sound effect for different formats in layer events
 * Add the `layerSavedAs` event
 
-If you got this far, and you have other ideas for the plugin, or you want to help me with the plugin, feel free to stop by the plugin repositpry on GitHub [bogind/qgs_sound_effects](https://github.com/bogind/qgs_sound_effects).
+If you got this far, and you have other ideas for the plugin, or you want to help me with the plugin, feel free to stop by the plugin repositpry on GitHub [bogind/qgs_sound_effects](https://github.com/bogind/qgs_sound_effects).  
 
-One last point,   
+One last point you might find interesting,   
 if you are wondering what volume icon I used for all of the icons in the plugin, it's actually something I created in QGIS using the geometry generator and the `Geometry by expression` algorithm and then saved as a geojson.
-You can find the geojson [here]({{ '/assets/etc/volume.geojson' | relative_url }}).
-
-
-<iframe style="height='400px';">
-<html>
-<head>
- <link rel="stylesheet" href="{{ '/assets/css/leaflet@1.9.4.css' | relative_url }}"/>
-<script src="{{ '/assets/js/leaflet@1.9.4.js' | relative_url }}" ></script>
-<style>
-    #map { 
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-     }
-</style>
-</head>
-<body>
-<div id="map"></div>
-          <script>
-            let map = L.map('map').setView([0,0], 2); 
-            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            }).addTo(map);
-            fetch("{{ '/assets/etc/volume.geojson' | relative_url }}")
-            .then(response => response.json())
-            .then(data => {
-                L.geoJSON(data).addTo(map);
-            });
-          </script>
-        </div>
-<body>
-</html>
-</iframe>
+You can find the geojson [here]({{ '/assets/etc/volume.geojson' | relative_url }}).  
 
 
 I hope you found the post interesting, and that you can use the plugin to make your work a bit more fun and interesting.
