@@ -1,7 +1,7 @@
 ---
 layout: post
 title: QGIS Sound Effects Plugin - Behind the Scenes
-tags: [Raster,GDAL,GeoPackage,Python]
+tags: [QGIS,PyQGIS,PyQt,Plugins,Python]
 thumbnail-img: /assets/img/blog/qgis_sound_effects_1.png
 share-img: /assets/img/blog/qgis_sound_effects_1.png
 share-title: QGIS Sound Effects Plugin - Behind the Scenes
