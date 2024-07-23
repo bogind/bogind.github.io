@@ -8,6 +8,7 @@ share-title: QGIS Sound Effects Plugin - Behind the Scenes
 share-description: How a joke became a plugin, and then an actually useful plugin.
 comments: true
 author: Dror Bogin
+last-updated: 2024-07-23
 ---
 
 About 2 weeks ago I saw a tweet by Kate Berg, AKA [Pokato]() about how cool would it be if we could make mods for GIS software, like ones for games.  
@@ -145,6 +146,16 @@ This was easiser than I expected, using 3 different refences to build the provid
 * A simple processing plugin I created with the [Plugin Builder 3 ](https://plugins.qgis.org/plugins/pluginbuilder3/) plugin.
 
 Niether of the approaches were perfect for what I pictured, but combining all 3 of them, and **actually reading the documentation** I was able to create a provider and algorithm that would play a sound effect when run.  
+
+
+### Update 23/07/2024
+
+When going over the plugin to prepare a presentation for a [QGIS Open Day talk]() I found another bug in the plugin.  
+Nothing big, but would have been annoying if I didn't fix it.  
+
+By misplacing a toggle of the canvas events when the global plugin `enabled` status was being updated, it would cause the global `enabled` to only toggle them on, but not off.  
+
+This was a simple fix, but it was a good reminder to always check the plugin for bugs, and to (try) and keep the code clean and organized.
 
 
 ### Future Plans
