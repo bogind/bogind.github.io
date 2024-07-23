@@ -11,6 +11,11 @@ author: Dror Bogin
 last-updated: 2024-07-23
 ---
 
+{: .box-note}
+Looking for the plugin? You can find it on [GitHub](https://github.com/bogind/qgs_sound_effects) and [QGIS Hub](https://plugins.qgis.org/plugins/qgs_sound_effects/).  
+
+
+
 About 2 weeks ago I saw a tweet by Kate Berg, AKA [Pokato]() about how cool would it be if we could make mods for GIS software, like ones for games.  
 
 <blockquote class="twitter-tweet" data-dnt="true">
