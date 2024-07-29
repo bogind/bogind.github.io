@@ -49,7 +49,7 @@ Here are some examples:
 Pretty proud of this one, it was done mostly in the evenings and didn't take a lot of time to create.
 It supports 4 languages and doesn't rely on a regular basemap, but uses 2 layers which together weigh about 1MB.
 The "backend" here is simply using GitHub Pages to host the site and the actual realtime processing is done using Google Sheets and AppScript.
-You can see the code here: [GitHub](https://github.com/bogind/elections)
+You can see the code here: [GitHub](https://github.com/bogind/elections)  
 <a href="https://bogind.github.io/elections/"><img height="200px" src="https://bogind.github.io/elections/preview.png"/></a>
 
 
@@ -93,7 +93,12 @@ A plugin that allows adding prefix proxy addresses to data source connections.
 [GitHub](https://github.com/bogind/qgs_sound_effects)
 [QGIS Hub](https://plugins.qgis.org/plugins/qgs_sound_effects/)
 
-A (silly) plugin that adds sound effects to QGIS to make work less boring.
+Started out as a silly plugin that adds sound effects to QGIS to make work less boring.  
+Since then it evolved to include processing algorithms that can be integrated to play sound effects, audio files and even text-to-speech in your QGIS models.  
+It is still a young project, but has also come a long way since it started.  
+You can hear me talk about it on the July 2024 QGIS Open Day:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z_H1oG6lfEg?si=sq22ac8lUs1q94Ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ### Israeli Open Data Loader

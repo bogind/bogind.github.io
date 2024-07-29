@@ -8,6 +8,7 @@ As the subtitle says, I talk a lot, and sometimes people listen. Here are some o
 
 ### 2024
 
+- The QGIS Sound Effects plugin - QGIS Open Day July 2024 [YouTube](https://www.youtube.com/live/Z_H1oG6lfEg?si=vTq7YQS5DypEOgFN)
 - Building QGIS Plugins - QGIS Open Day March 2024 [YouTube](https://www.youtube.com/watch?v=Uw1tokdVB9c)
 - Building QGIS Plugins (Hebrew) - QGIS-IL Open Day January 2024 [YouTube](https://www.youtube.com/watch?v=NiW3r-4CJ9g&t=1s), [Slides](https://docs.google.com/presentation/d/15rWE42oDx8-C0641Ddc500e2xA_y1vL5M8Q2QbKS6uA/edit?usp=sharing)
 
