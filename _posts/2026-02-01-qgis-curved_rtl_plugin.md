@@ -34,7 +34,7 @@ The issue with curved labels for RTL languages in QGIS is that when you use the 
 This is quite a long standing issue and has been discussed in various QGIS issues ([#21940](https://github.com/qgis/QGIS/issues/21940), [#54098](https://github.com/qgis/QGIS/issues/54098) ).  
 From what I understand, it's currently not possible to fix this issue in the QGIS core for various reasons, so the best we can do is find workarounds.
 
-![]({{ '/assets/img/blog/qgis_curved_rtl_label_fixer_2.png' | relative_url }})
+[![You may want to see the full image in the issue]({{ '/assets/img/blog/qgis_curved_rtl_label_fixer_2.png' | relative_url }})](https://github.com/qgis/QGIS/issues/54098#issuecomment-2151903468)
 
 I thought about it for a moment and realized that while the script worked, it was not very user friendly.  
 Not just the fact that adding custom expression functions is not something every user is familiar with, but also the fact that the script required users to manually add the function to the expression of each label that needed fixing.
