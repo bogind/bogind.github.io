@@ -27,8 +27,7 @@ He then reminded me that a few months ago I wrote a [basic script](https://githu
 What the function does is reverse only the RTL letters in the a string, while keeping the LTR letters and the overall string structure in place.
 So for example, the string "שלום World" would become "םולש World", which when placed on a curved line would appear correctly.
 
-{: .box-note}
-Some exposition for those of you blessed with simple LTR languages.
+### Some exposition for those of you blessed with simple LTR languages.
 
 The issue with curved labels for RTL languages in QGIS is that when you use the "Curved" placement option for labels, the letters are placed in reverse order.  
 This is quite a long standing issue and has been discussed in various QGIS issues ([#21940](https://github.com/qgis/QGIS/issues/21940), [#54098](https://github.com/qgis/QGIS/issues/54098) ).  
