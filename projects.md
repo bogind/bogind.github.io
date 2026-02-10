@@ -131,6 +131,10 @@ I won't go into too much detail about this one here, as I have already written a
 
 It's still not perfect, and I would have loved to find a solution to the actual issue in the QGIS codebase, but as a quick and easy solution for users who need to use curved labels in RTL languages, this plugin does the trick.
 
+You can see the plugin in action in the video below, and you can read more about it in the blog post linked above.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SdQLp4Vrchg?si=X8_zo-ISGCUC7Q9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 ### Israeli Open Data Loader
