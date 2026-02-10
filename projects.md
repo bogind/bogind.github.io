@@ -6,16 +6,21 @@ title: Projects
 These are things I've worked on over the years, some for clients, and some as personal projects.
 A lot of the work I did for clients is not available for public viewing, but every project I've worked on has taught me something new and the experience has been invaluable.
 
+[Web Maps](#web-maps)  
+[QGIS Plugins](#qgis-plugins)  
+[Other Projects](#other-projects)  
+
 ## Web Maps
 
-### qview
+### QVIEW
 
 My pride and joy.
 I started work on this project in 2022 as a solution for a fast and lightweight way to display spatial data online, as opposed to the massive project that is Tel Aviv's IView system which is based on the ArcGIS JavaScript API.
 It relies on MapLibre GL JS for the map display, with the main system acting as a platform for sources and layers defined in JSON files which can be selected based on the URL parameters.
-I didn't stay on to see the project move to production as I was offered a different job, but I'm still proud of the work I, and later on my coworkers, did on it.
+<!-- I didn't stay on to see the project move to production as I was offered a different job, but I'm still proud of the work I, and later on my coworkers, did on it.-->
+Easily one of my favorite projects, and I'm really proud of how it turned out, and how well it performs even with a lot of data on the map.
 
-You can see the project [here](https://gis.tel-aviv.gov.il/qview/) and already integrated in several municipality pages.
+You can see the project [here](https://qview.tel-aviv.gov.il/) and already integrated in several municipal apps.
 
 ### GeoSpatial Companies Map
 
@@ -80,7 +85,7 @@ The Idea behind this is liberating organizations from having to keep using ESRI 
 
 This way, if you use a simple python script (which Netta created) you can convert all your old .lyr files to .lyrx and use directly in QGIS, or convert them further to QML.
 
-###  Proxy Handler
+### Proxy Handler
 
 [GitHub](https://github.com/bogind/prefix_proxy)
 [QGIS Hub](https://plugins.qgis.org/plugins/prefix_proxy/)
@@ -99,6 +104,33 @@ It is still a young project, but has also come a long way since it started.
 You can hear me talk about it on the July 2024 QGIS Open Day:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_H1oG6lfEg?si=sq22ac8lUs1q94Ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+### GIF Clicker
+
+[GitHub](https://github.com/bogind/QgisGifClicker)  
+[QGIS Hub](https://plugins.qgis.org/plugins/gif_clicker/)
+
+Another silly plugin that started as a POC, just to see if it was possible to make QGIS play GIFs on click (it was, but in a [really annoying way](https://mapstodon.space/@bogind/112902883491097447)).  
+While doing it I also played around a bit with changing the cursor icons, but left that out of the plugin eventually.
+You can still see the result of the early playing around with cursor icons and playing GIFs on click in the video below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BPiiqU11uVU?si=pHGswhF7kLzdLQaf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+And while I really tried to find a use case for this plugin, I couldn't find one, but I did package and published it anyway, to let others have fun with it as well.
+The current version of the plugin lets the user play one of 3 GIFs packaged with the plugin, or add their own GIFs and use them in the same way.
+The GIFs are played on click of the pan map tool when they are enabled.
+
+
+### Curved RTL Label Fixer 
+
+[GitHub](https://github.com/bogind/curved_label_fixer)  
+[QGIS Hub](https://plugins.qgis.org/plugins/curved_label_fixer/)
+
+I won't go into too much detail about this one here, as I have already written a [blog post](https://bogind.com/2026-02-01-qgis-curved_rtl_plugin/) about it, but in short, this plugin is a simple tool that allows users to fix a very old issue of labels written in right-to-left (like Hebrew and Arabic) languages having their characters reversed when the label positioning is set to "Curved".  
+
+It's still not perfect, and I would have loved to find a solution to the actual issue in the QGIS codebase, but as a quick and easy solution for users who need to use curved labels in RTL languages, this plugin does the trick.
+
 
 
 ### Israeli Open Data Loader
